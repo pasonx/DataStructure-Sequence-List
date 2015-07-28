@@ -1,5 +1,6 @@
 #include <stdio.h>
 #incldue <stdlib.h>
+#include "Sqlist.h"
 
 int main()
 {
