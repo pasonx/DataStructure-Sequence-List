@@ -75,6 +75,8 @@ Sqlist * create_list(Sqlist * L)
 }
 int InsList(Sqlist * L, int i, ElemType e)
 {
+	//插入算法
+	//i的取值范围：0 < i <= L->last + 1;
 	int j;
 	//考虑第一种表满的情况
 	if (L->last == MAX)
