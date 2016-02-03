@@ -84,8 +84,11 @@ int InsList(Sqlist * L, int i, ElemType e)
 	//考虑第二种插入位置非法
 	if (i < 1 || i > L->last + 1)
 		return -2;
-	for (j = L->last - 1; j >= i - 1; j--)
+	/*for (j = L->last - 1; j >= i - 1; j--)
 		L->elem[j + 1] = L->elem[j];
+	*/
+	for (j = L->last; j >= i; --j)
+		L->elem[j] = L->elem[j-1];
 	L->elem[i - 1] = e;
 	L->last += 1;
 	return 0;
