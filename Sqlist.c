@@ -52,6 +52,19 @@ int Locate(Sqlist * L,int e)
 	else
 		return -1;
 }
+/*
+Another method
+int Locate(Sqlist L, int e)
+{
+	for (int i = 0; i < L->last; ++i)
+	{
+		if (L->elem[i] == e)
+			return i + 1;
+	}
+
+	//A macro
+	return NOT_FIND;
+}*/
 void traverse_list(Sqlist * L)
 {
 	if (L->last == 0)
