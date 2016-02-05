@@ -54,7 +54,7 @@ int Locate(Sqlist * L,int e)
 }
 /*
 Another method
-int Locate(Sqlist L, int e)
+int Locate(Sqlist * L, int e)
 {
 	for (int i = 0; i < L->last; ++i)
 	{
